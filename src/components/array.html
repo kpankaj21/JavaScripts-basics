@@ -1,0 +1,648 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      // const cars =["BMW","Ford","Saab"]
+
+      // let store = ""
+      // for(let value in cars){
+      //     store += cars[value]  + "<br>";
+      // }
+
+      // document.write("store :",store);
+      // console.log("store :",cars[cars.length-2]);
+
+      // let text="<ul>";
+
+      //     for(let i =0; i<cars.length; i++){
+      //         text += "<li>" +cars[i] + "</li>";
+      //     }
+      //     text +="</ul>"
+      //     document.write("textttt",text);
+
+      //   const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      //       let text = "<ul>";
+      //   fruits.forEach(myFunction);
+      //       text += "</ul>";
+      //   document.write(text);
+      //   function myFunction(value) {
+      //     text += "<li>" + value + "</li>";
+      //   }
+
+      // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      //   // fruits.push("Kiwi")
+      //   fruits[fruits.length - 2] = "Kiwi";
+      // //   fruits[6] = "Grapes";
+      //   document.write(fruits);
+      //   console.log(fruits);
+      //   console.log(typeof fruits);
+      //   console.log(Array.isArray(fruits));
+      //   console.log(fruits instanceof Array);
+      //   console.log(fruits.toString());
+      //   console.log(fruits.join("-"));
+      //   fruits.pop();
+      //   console.log(fruits);
+      //   fruits.push("Mango");
+      //   console.log(fruits);
+      //   fruits.shift()
+      //   console.log(fruits);
+      //   fruits.unshift("Blueberry")
+      //   console.log(fruits);
+      // //   delete fruits[0]
+      // console.log(fruits.splice(1 ,fruits.length));
+      //   console.log(fruits);
+
+      //   const num =[1,3,5,7,9]
+      //   const num1=[2,4,6,8]
+      //  const nwe = num1.concat(10)
+      //   console.log("num1",nwe);
+
+      //   console.log(num.concat(num1))
+
+      // const fruits =["Banana","Orange","Apple","Mango"]
+      // console.log(fruits);
+
+      // fruits.splice(2,1, "Lemon","Kiwi")
+      // fruits.splice(0,1)
+      // console.log(fruits);
+
+      // const fruits =["Banana","Orange","Apple","Mango"]
+      // const citrus =fruits.slice(0,3)
+      // console.log(citrus);
+
+      // const fruits =["Banana","Orange","Apple","Mango"]
+      // console.log(fruits.sort().reverse());
+
+      // const number = [34,6,89,02,4,17]
+      // console.log(number.sort(function(a, b){return a-b}));
+      // console.log("lowest no:",number[0]);
+      // console.log(number.sort(function(a, b){return b-a}));
+      // console.log("Highest no:",number[0]);
+
+      // const cars11 = [
+      //     {type:"Volvo", year :"2016"},
+      //     {type:"Saab", year :"2001"},
+      //     {type:"BMW", year :"2010"},
+      //     {type:"Mahindra", year:"1999"}
+      // ]
+      // const years = cars11.sort(function(a,b){return a.year - b.year})
+      // console.log(years);
+
+      // const number = [34, 56, 2, 34, 74,18,0,1,3];
+
+      // console.log(myArrayMax(number));
+      // function myArrayMax(arr){
+      //   return Math.max.apply(null,arr)
+      // }
+
+      // let text = "";
+      //  number.forEach(myFunction);
+      // function myFunction(value) {
+      //   text += value + " <br>";
+      // }
+      // document.write(text);
+
+      // let double = number.map(function(item) {return item * 2})
+      // console.log(double);
+
+      // let vote =  number.filter(function(item){return item <= 2})
+      // console.log(vote);
+
+      // const cars = [
+      //   {type:"Volvo", year:2006},
+      //   {type:"Saab", year:2001},
+      //   {type:"Mahindra", year:2020},
+      //   {type:"BMW", year:1999},
+      // ]
+
+      //  let year1= cars.sort(function(a,b){return a.year - b.year})
+      //  console.log(year1);
+
+      //  let type =cars.sort(function(x,y){if(x.type > y.type){return 1}if(x.type < y.type){return -1} return 0})
+      //  console.log(type);
+
+      //  const number1 = [10,20,30]
+      //  const aaa = number1.reduce(myFunction ,100)
+      //  function  myFunction(a,b){
+      //     return a + b
+      //   }
+      //   console.log("total :",aaa);
+
+      // const number = [11,2,34,7,85,33]
+      // console.log(number.reduce(function(a,b){return a + b}));
+
+      // const number = [5,10,15,20]
+      // console.log(number.reduceRight(function(a,b){return a + b}));
+
+      // const bc =[12,59,53,09,70,90,5]
+      // console.log(bc.every(function(value){return value > 4}));
+
+      // const cd =[10,25,36,98,55,09]
+      // console.log(cd.some(function(value){return value> 180}));
+
+      // const fruits = ["Appple", "Banana" ,"Mango","Grapes","Apple","Kiwi", "Mango"]
+      // console.log(fruits.indexOf("Apple"));
+      // console.log(fruits.lastIndexOf("Apple"));
+
+      // const dc = [2,7,18,86,97,2,3,56]
+      // const data = dc.find(function(value){return value > 18})
+      // console.log("18 +",data);
+
+      // const ss = [12,5,33,44,53,23,5,56]
+      // const data1 =ss.findIndex(function(value){return value > 18})
+      // console.log(data1);
+
+      // console.log(Array.from("abcdefghijklmnopqrstuvwxyz"))
+
+      // const vp = ["Apple","Banana","Grapes","Kiwi"]
+      // console.log(vp.includes("banana"));
+
+      // var cars = ["Saab","Volvo","BMW"]
+      // console.log("1st:",cars[0]);
+      // {
+      //   var cars = ["Bmw","Saab","Volvo"]
+      //   console.log("2nd :",cars[0]);
+      // }
+      // console.log("3rd :",cars[0]);
+
+      /////////////////////////////////////......Date..
+      // const d = new Date()
+      // console.log(d);
+
+      // const a = new Date(2020, 10, 21, 10, 22, 42 )
+      // console.log(a);
+
+      // const b = new Date(2020, 13, 25, 10, 22, 42 )
+      // console.log(b);
+
+      // const c = new Date(2020, 13, 26, 26, 22, 42 )
+      // console.log(c);
+
+      // const e = new Date(2018 ,11)
+      // console.log(e);
+
+      // const f =new Date(2020)  // <----milliseconds
+      // console.log(f);
+
+      // const g = new Date(99, 11, 21)
+      // console.log(g);
+
+      // const h =new Date(9 ,11, 21)
+      // console.log(h);
+
+      // const k = new Date(0)
+      // console.log(k);
+
+      // const l = new Date(2000000000000)
+      // console.log(l);
+
+      // const m = new Date(-10000000000)
+      // console.log(m);
+
+      // console.log(d.toDateString())
+      // console.log(d.toUTCString());
+      // console.log(d.toDateString());
+      // console.log(d.toISOString());
+
+      // const p = new Date("2020-03-25")
+      // console.log(p);
+
+      // const q = new Date("2020-03")
+      // console.log(q);
+
+      // const msec = Date.parse("March 21, 2020")
+      // console.log(msec);
+
+      // console.log(d.getTime())
+      // console.log(d.getFullYear())
+      // console.log(d.getMonth());
+      // console.log(d.getDay());
+
+      // console.log(d.getDate());
+      // console.log(d.getHours());
+
+      // const today =new Date()
+      // const someday =  new Date()
+
+      // someday.setFullYear(2022 ,4, 6)
+
+      // if(someday > today){
+      //   console.log("Today is before may 6, 2022");
+      // }else{
+      //   console.log("Today is after may 6, 2022");
+      // }
+
+      //....................Math
+
+      // console.log(Math.round(4.6));
+      // console.log(Math.round(4.2));
+
+      // console.log(Math.ceil(4.9));
+      // console.log(Math.ceil(4.1));
+      // console.log(Math.ceil(4.4));
+      // console.log(Math.ceil(4.6));
+
+      // console.log(Math.floor(4.9));
+      // console.log(Math.floor(4.1));
+
+      // console.log(Math.trunc(-4.5));
+
+      // console.log(Math.sign(-4));
+      // console.log(Math.sign(0));
+      // console.log(Math.sign(4));
+
+      // console.log(Math.pow(8, 2));
+      // console.log(Math.sqrt(64));
+
+      // console.log(Math.random());
+      // console.log(Math.floor(Math.random() * 10 + 1));
+
+      // console.log(2 < "5"); //true
+      // console.log("5" > "4"); //true
+
+      // var day = "";
+      // switch (new Date().getDay()) {
+      //   case 0:
+      //     day = "Sunday";
+      //     break;
+
+      //   case 1:
+      //     day = "Monday";
+      //     break;
+
+      //   case 2:
+      //     day = "Tuesday";
+      //     break;
+
+      //   case 3:
+      //     day = "Wednesday";
+      //     break;
+      //   case 4:
+      //     day = "Thursday";
+      //     break;
+      //   case 5:
+      //     day = "Friday";
+      //     break;
+
+      //   case 6:
+      //     day = "Saturday";
+      //     break;
+      //     default :
+      //     day ="Lokking forward to the Weekend"
+      // }
+      // console.log(day);
+
+      // let x;
+      // switch(new Date().getDay()){
+      //   case 4:
+      //   case 5:
+      //     x="Soon it is Weekend"
+      //     break;
+      //     default :
+      //     x="Looking forward to the Weekenddd"
+      // }
+      // console.log(x);
+
+      // let x= "0";
+      //       switch(x){
+      //         case x:
+      //           text = "on"
+      //           // console.log("text is on");
+      //           break
+
+      //         case 2 :
+      //           text = "off"
+      //           break
+
+      //           default :
+      //           text = "No value found"
+      //       }
+      //       console.log(text);
+
+      // switch("Apple"){
+      //   case "Apple" :
+      //     console.log("Apple will cost you 100rs");
+      //     break;
+
+      //   case "Banana" :
+      //   console.log("Banana will cost you 40rs");
+      //   break;
+
+      //   case "Grapes" :
+      //   case  "Kiwi"  :
+      //   console.log("Cheery and Kiwi  will cost you 80rs");
+      //   break;
+
+      //   default :
+      //   console.log("We are out of Stock");
+      // }
+
+      // for (let i = 1; i <= 10; i++) {
+      //   // console.log(i);
+      //   if (i === 3 || i === 5) {
+      //     continue;
+      //   }
+      //   console.log(i);
+      // }
+
+      //   let i=0
+      // while(i < 10) {
+      //   i++;
+      //   if (i === 4) {
+      //     continue;
+      //   }
+      //   console.log(i);
+      // }
+
+      // const cars = ["BMW","Audi","Mahindra","Neno"]
+
+      // let text ="";
+      // for(let i=0; i < cars.length; i++){
+      //   if(cars[i] === "Audi"){
+      //     continue;
+      //     // break;
+      //   }
+      //   text += cars[i] + " ";
+      // }
+      // console.log(text );
+
+      // let store ="";
+      // const bikes = ["Royal","ZMR","KTM","Avenger"]
+      // for(let i=0; ; i++){
+      //     store += bikes[i] + " ";
+      //     break;
+      // }
+      // console.log("bike store :",store);
+
+      // const student =[
+      //   {name :"Kp" ,age:21 ,salary:"10,000"},
+      //   {name :"kpk", age:26 , salary: "50,000"},
+      //   {name :"Vk", age:30 ,salary :"75,000"}
+      // ]
+      // var text ="";
+      // for(var x in student){
+
+      //   if(student[x].age < 22){
+      //     continue
+      //   }
+      //   text += "Name is " + student[x].name + " " +"and his age is "+ student[x].age + " " +"and salary is " + student[x].salary + " ";
+      // }
+      // console.log(text);
+
+      // const number =[10,9,77,6,4,3,35,7]
+      // number.forEach(function(a){
+      //   if(a < 10){
+      //     return
+      //   }
+
+      //   console.log(a);
+      // })
+
+      // let languageas = "Javascript"
+      // let text=""
+
+      // for(let i of languageas){
+      //   text += i + "<br>"
+      // }
+      // // console.log(text);
+      // document.write(text)
+
+      //   let i = 0;
+      // do {
+      //   i++
+      //   console.log(i);
+      // } while (i<10);
+
+      // const bikes = ["Royal", "ZMR", "KTM", "Avenger"];
+      // let i = 0;
+      // let text = "";
+      // while (bikes[i]) {
+      //   text += bikes[i] + " ";
+      //   i++;
+      // }
+      // console.log(text);
+
+      //..........object
+
+      // const person ={firstName : "Kp", lastname : "Ahir", Age:21, Salalry:10000}
+      // console.log("My name is :" + person.firstName + " " + person.lastname);
+
+      // const student = {
+      //   name:"kp", age:22, Salalry:"10000"
+      // }
+      // student.nationalaty ="Indian"
+      // const x = student
+      //  x.age = 21
+      // //  delete x.name
+      //  delete x["name"]
+
+      // console.log(x.age);
+      // console.log(x.name + " " + x.age + " " + x["Salalry"] + " ");
+
+      // let text =""
+      // for(let i in x){
+      //   text += x[i] + " "
+      // }
+      // console.log(text);
+
+      //   const data = {
+      //     name :"kp",
+      //     age :22,
+      //     id :2,
+      //     car : {
+      //       car1 :"Audi",
+      //       car2 :"BMW",
+      //       car3 :"Saab"
+      //     }
+
+      //   }
+      // // console.log(data.car.car2);
+      // console.log(data["car"]["car3"]);
+
+      // const bioData = {
+      //   name : "Kp",
+      //   age : 22,
+      //   cars : [
+      //     {name :"Ford", model :["Fiesta","Focus","Mustang"]},
+      //     {name: "BMW" , model :["320" ,"x3", "v6"]},
+      //     {name :"Audi", model :["Q3","xxx","expo"]}
+      //   ]
+      // }
+      // // console.log(bioData.cars[0].model[0]);
+
+      // let store= "";
+      // for(let i in bioData.cars){
+      //   store += "<h2>" + bioData.cars[i].name + "</h2>"
+      //   for(let j in bioData.cars){
+      //     store += bioData.cars[i].model[j] + " "
+      //   }
+      // }
+      // document.write(store);
+
+      // const bioData = {
+      // firstName :"Pankaj",
+      // lastName : "Ahir",
+      // age:22,
+      // fullName : function(){
+      //   return  ("fullname is " + this.firstName + " " + this.lastName).toUpperCase()
+      // }
+      // }
+      //  console.log(bioData.fullName());
+
+      // const bioData = {
+      //   name: "Kp",
+      //   age:22,
+      //   salary :10000,
+      //   today: new Date()
+      // }
+
+      // //  let abc = Object.values(bioData)
+      //  console.log(JSON.stringify(bioData))
+      // //  console.log(abc);
+
+      // ..........//........Getters and Setters
+
+      // const bioData = {
+      //   firstName:"Pankaj",
+      //   lastName : "Kamaliya",
+      //   language :"Gujrati",
+      //   get lang() {
+      //     return this.language
+      //   }
+      // }
+      // console.log(bioData.lang);
+
+      // const arr = [0, 1, 2, 3, 4];
+      // const arr1 = [5, 6, 7, 8];
+      // const arr2 = [...arr, ...arr1, 9, 10];
+      // console.log(arr2);
+
+      // class Car {
+      //   constructor(name) {
+      //     this.brand = name;
+      //   }
+      // }
+      // const myCar = new Car("Ford");
+      // console.log(myCar.brand);
+
+      // class Bike {
+      //   constructor(name) {
+      //     this.brand = name;
+      //   }
+      //   get() {
+      //     return this.brand;
+      //   }
+      // }
+
+      // class Model extends Bike {
+      //   constructor(name,mod){
+      //     super(name)
+      //     this.model= mod
+      //   }
+      //   show(){
+      //     return  this.get() + " " + this.model
+      //   }
+      // }
+      // const myBike = new Model("Royal","cbz");
+      // console.log(myBike.show());
+
+
+      // const vehicles = ["mustang",  "f-50", "expedition"]
+      // const [car, truck, suv] = vehicles
+     
+      //   function calculate(a,b){
+
+      //     const add = a + b;
+      //     const sub = a - b;
+      //     const mul = a * b;
+      //     const div = a / b;
+
+      //     return [add, sub ,mul, div]
+      //   }
+      //   const [add, sub, mul, div] =calculate(12, 2)
+      //   console.log("Sum :" + add);
+      //   console.log("Diff :" + sub);
+      //   console.log("Multi:" + mul);
+      //   console.log("Div:" + div);
+
+        // const User = {
+        //   id: 9,
+        //   isVerified : true,
+        //   registration:{
+        //     city:"Surat",
+        //     state:"Gujrat"
+        //   }
+        // }
+        // const {isVerified,id,registration :{city,state}} =User
+        // console.log("id:",id);
+        // console.log(isVerified);
+        // console.log(city);
+        // console.log(state);
+      
+
+        // const num = [1,2,3,4,5,6,7,8]
+        // const[one,two,...rest] = num
+        // console.log(one);
+        // console.log(two);
+        // console.log(rest);
+
+
+        // const myVehicle = {
+        //   brand : "Ford",
+        //   model : " Mustang",
+        //   color :"red", 
+        // }
+
+        // const updateMyVehicle = {
+        //   type : "car",
+        //   year :2021,
+        //   color:"yellow"
+        // }
+
+        // const new1 = {...myVehicle,...updateMyVehicle}
+        // console.log(new1);
+
+        let token = false;
+        token ? console.log("token is true") : console.log("token is false "); 
+
+        //    return (
+        //     item.personalInfo.hobby1.Swimming.map(item =>{
+        //         return (
+        //             item.location.map(item => { `${Object.keys(item)} : ${Object.values(item)}`
+        //                 // console.log(Object.keys(item));
+
+
+        //             })
+        //         )
+        //     })
+        //     //   item.personalInfo.hobby1.Swimming.map(item => {
+        //     //       return (
+        //     //          console.log("item.location", item)
+
+        //     //       )
+        //     //   }
+        //     //   )
+        //   )
+
+//    let store =""
+
+// for(let i in data.student.male){
+//     store += data.student.male[i].name + " "
+// for(let j in data.student.male){
+//     store += data.student.male[i].personalInfo.hobby.Swimming[j]
+//     for(let k in data.student.male){
+//         store +=data.student.male[i].personalInfo.hobby.Swimming[j].location[k].Waterpark
+//     }
+// }
+// }
+// console.log("store :",store);
+
+    </script>
+  </body>
+</html>
